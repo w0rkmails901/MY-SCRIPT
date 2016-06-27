@@ -16,6 +16,12 @@ mkdir -p ~/bin && curl https://storage.googleapis.com/git-repo-downloads/repo > 
 echo Repo Has Been Downloaded!
 if [ ! "$(which adb)" == "" ];
 then
+echo Setting up USB Ports
+sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/GMCadiom/MY-SCRIPT/master/51-android.rules
+sudo chmod 644   /etc/udev/rules.d/51-android.rules
+sudo chown root /etc/udev/rules.d/51-android.rules
+sudo service udev restart
 adb kill-server
 sudo killall adb
 fi
+echo USB Ports Configured!
