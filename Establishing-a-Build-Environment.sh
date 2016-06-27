@@ -16,5 +16,6 @@ then
 adb kill-server
 sudo killall adb
 fi
+$(info ==============**FireRom Build**=============)
 echo DONE ;) ;)
 echo ENJOY BUILDING :D :D
