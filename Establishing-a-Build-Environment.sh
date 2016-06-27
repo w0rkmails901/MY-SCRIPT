@@ -23,7 +23,7 @@ echo repo has been Downloaded!
 if [ ! "$(which adb)" == "" ];
 then
 echo Setting up USB Ports
-sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/snowdream/51-android/master/51-android.rules
+sudo curl --create-dirs -L -o /etc/udev/rules.d/51-android.rules -O -L https://raw.githubusercontent.com/GMCadiom/MY-SCRIPT/master/51-android.rules
 sudo chmod 644   /etc/udev/rules.d/51-android.rules
 sudo chown root /etc/udev/rules.d/51-android.rules
 sudo service udev restart
