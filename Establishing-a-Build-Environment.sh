@@ -16,6 +16,12 @@ then
 adb kill-server
 sudo killall adb
 fi
-$(info ==============**FireRom Build**=============)
+ui_print("I===========================================I"); 
+ui_print("I   ___      ___  _____  __    __   _____   I");
+ui_print("I  |    \  /    ||_   _||  |  |  | |_   _|  I");
+ui_print("I  |     \/     |  | |  |  |  |  |   | |    I");
+ui_print("I  |   |\  /|   |  | |  |  |  |  |   | |    I");
+ui_print("I  |   | \/ |   | _| |_ |  \__/  \  _| |_   I");
+ui_print("I  |___|    |___||_____| \_____/\_||_____|  I");
 echo DONE ;) ;)
 echo ENJOY BUILDING :D :D
