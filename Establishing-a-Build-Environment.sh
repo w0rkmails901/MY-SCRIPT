@@ -11,8 +11,11 @@ automake g++ gawk subversion expat libexpat1-dev python-all-dev binutils-static 
 libcap-dev autoconf libgmp-dev build-essential gcc-multilib g++-multilib pkg-config libmpc-dev libmpfr-dev lzma* \
 liblzma* w3m phablet-tools android-tools-adb ccache maven meven2 ncftp libgl1-mesa-dev unzip
 echo Dependencies have been installed
+echo Downloading Repo!
+mkdir -p ~/bin && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
+echo Repo Has Been Downloaded!
 if [ ! "$(which adb)" == "" ];
 then
 adb kill-server
 sudo killall adb
-fi 
+fi
