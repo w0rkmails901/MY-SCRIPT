@@ -18,6 +18,9 @@ echo Configuring Nautilus!
 sudo apt-get install nautilus-open-terminal
 nautilus -q
 echo Configuring Nautilus Done!
+echo Theming Terminal!
+curl https://raw.githubusercontent.com/Bash-it/bash-it/master/install.sh | bash
+echo Theming Terminal Done!
 echo Configuring Building Environment!
 curl https://raw.githubusercontent.com/GMCadiom/MY-SCRIPT/master/Establishing-a-Build-Environment.sh | bash
 echo Configuring Building Environment Done!
